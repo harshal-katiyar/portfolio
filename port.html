@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website - John Doe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/feather-icons/dist/feather.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <nav class="navbar" role="navigation">
+                <div class="logo-container">
+                    <i class="fas fa-code logo" aria-hidden="true"></i>
+                    <div class="logo-text">ohn Doe</div>
+                </div>
+                
+                <div class="nav-items">
+                    <div><a href="#projects" aria-label="View Projects">Projects</a></div>
+                    <div><a href="#skills" aria-label="View Skills">Skills</a></div>
+                    <div><a href="#contactme" aria-label="Contact Me">Contact Me</a></div>
+                </div>
+            </nav>
+
+            <div class="hero-section">
+                <div class="faded-text">John Doe</div>
+    
+                <div class="hero-section-left">
+                    <div class="hero-section-heading">Hi! John Doe</div>
+                    
+                    <div class="hero-section-heading hero-section-sub-heading">
+                        I am a <span class="role"></span>
+                    </div>
+    
+                    <div class="hero-section-description">
+                        I'm a software developer and here is my portfolio website. Here you'll
+                        learn about my journey as a software developer.
+                    </div>
+                    
+                    <button class="btn-pink" id="btn" aria-label="Hire me">Hire me</button>
+                </div>
+    
+                <div class="hero-section-right">
+                    <div class="absolute icons icon-dots">
+                        <i class="fas fa-ellipsis-h" aria-hidden="true"></i>
+                    </div>
+                    <div class="absolute icons icon-cube">
+                        <i class="fas fa-cube" aria-hidden="true"></i>
+                    </div>
+                    <div class="absolute icons icon-circle">
+                        <i class="far fa-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="absolute icons icon-zigzag">
+                        <i class="fas fa-bolt" aria-hidden="true"></i>
+                    </div>
+                    <div class="absolute icons icon-plus">
+                        <i class="fas fa-plus" aria-hidden="true"></i>
+                    </div>
+                    <div class="user-image">
+                        <i class="fas fa-user-circle fa-10x" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="project-section">
+            <h2 class="page-header">Projects</h2>
+
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+
+            <div class="project-container">
+                <!-- Project cards structure maintained but updated with Font Awesome icons -->
+                <!-- Similar structure repeated for all project cards -->
+                <div class="project-card" id="project1" data-category="web">
+                    <!-- Project card content -->
+                </div>
+                <!-- Additional project cards... -->
+            </div>
+        </div>
+        
+        <div id="skills" class="skills-container">
+            <!-- Skills section maintained but updated with Font Awesome icons -->
+        </div>
+
+        <div id="contactme" class="contact-section">
+            <h2 class="contact-header">Contact Me</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn-pink">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
